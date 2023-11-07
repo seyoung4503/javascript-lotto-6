@@ -1,13 +1,13 @@
 import { Console, MissionUtils } from "@woowacourse/mission-utils";
-class Lotto {
-  #numbers;
+import {MONEY} from "./const-module";
+class InitLotto {
 
-  constructor(numbers) {
-    this.#validate(numbers);
-    this.#numbers = numbers;
+  constructor(money) {
+    this.#validate(money);
+    this.ticketsNum = money / MONEY.UNIT;
   }
 
-  #validate(numbers) {
+  #validate(money) {
     if (numbers.length !== 6) {
       throw new Error("[ERROR] 로또 번호는 6개여야 합니다.");
     }
@@ -18,6 +18,7 @@ class Lotto {
     }
 
     // 입력된 타입이 적절한지 판단 테스트 추가할 것.
+    // 적절한 입력인지 판단 테스트 추가
 
   }
 

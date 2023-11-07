@@ -16,6 +16,9 @@ class App {
     const purchaseAmount = await Console.readLineAsync("");
     this.money = purchaseAmount;
     Console.print(purchaseAmount + "개를 구매했습니다.");
+    // purchaseAmount isnan 함수로 판별하기
+
+    new Lotto
   }
 
 }

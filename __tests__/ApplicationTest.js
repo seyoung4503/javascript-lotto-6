@@ -32,7 +32,7 @@ const runException = async (input) => {
   const INPUT_NUMBERS_TO_END = ["1000", "1,2,3,4,5,6", "7"];
 
   mockRandoms([RANDOM_NUMBERS_TO_END]);
-  mockQuestions([input, ...INPUT_NUMBERS_TO_END]);
+  mockQuestions([input, ...INPUT_NUMBERS_TO_END]); //   [ '1000j', '1000', '1,2,3,4,5,6', '7' ]
 
   // when
   const app = new App();
